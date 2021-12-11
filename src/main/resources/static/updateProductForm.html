@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav/favicon.ico" type="image/x-icon">
+    <title>Formulario Actualizar Productos</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <script src="js/name.js"></script>
+</head>
+
+<body>
+
+    <!-- mi navegacion -->
+    <div class="miNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/LogoTurmeque.png" alt="" style="margin-right: 20px;">
+            <a class="navbar-brand" href="#">Alto Turmeque Ltda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <span class="nombreUsuario">Aqui va el nombre de usuario</span>
+                    <a href="./productsAdmon.html"><button type="button" class="btn btn-success"
+                            onclick="editData('updateProductForm')">Volver</button></a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- fin mi navegacion -->
+
+    <div class="container-sm p-1 my-5 border">
+        <div class="text-white p-1 my-5 border">
+            <h5>Actualizar Producto</h5>
+            <div class="mb-3 my-3" style="display: none">
+                <label for="updateRef" class="form.label">Referencia:</label>
+                <input type="text" class="form-control" id="updateRef">
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updateCategory" class="form-label">Categoria:</label>
+                <input type="text" class="form-control" id="updateCategory">
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updateSize" class="form-label">Talla:</label>
+                <input type="text" class="form-control" id="updateSize">
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updateDes" class="form-label">Descripcion:</label>
+                <input type="text" class="form-control" id="updateDes">
+            </div>
+            <div class="mb-3" id="menu-pos">
+                <label for="updateAva" class="form-label">Disponibilidad:</label>
+                <select class="form-control" id="updateAva">
+                    <option>Seleccione disponibilidad</option>
+                    <option>true</option>
+                    <option>false</option>
+                </select>
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updatePrice" class="form-label">Precio:</label>
+                <input type="number" class="form-control" id="updatePrice">
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updateQua" class="form-label">Cantidad:</label>
+                <input type="number" class="form-control" id="updateQua">
+            </div>
+            <div class="mb-3 mt-3" id="menu-pos">
+                <label for="updatePhoto" class="form-label">Imagen:</label>
+                <input type="text" class="form-control" id="updatePhoto">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="editData('updateProductForm')">Actualizar
+                Producto</button>
+        </div>
+    </div>
+
+    <!-- mi Footer -->
+    <div class="miFooter">
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="./index.html"> deAltoTurmeque.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- fin mi Footer -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

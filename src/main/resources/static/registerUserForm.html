@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav/favicon.ico" type="image/x-icon">
+    <title>Formulario Registro Productos</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/name.js"></script>
+    <link rel="stylesheet" href="css/registerUser.css">
+</head>
+
+<body>
+    <!-- mi navegacion -->
+    <div class="miNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/LogoTurmeque.png" alt="" style="margin-right: 20px;">
+            <a class="navbar-brand" href="#">Alto Turmeque Ltda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <span class="nombreUsuario">Aqui va el nombre de usuario</span>
+                    <a href="./usersAdmon.html"><button type="button" class="btn btn-success"
+                            onclick="showData('usersAdmon')">Volver</button></a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- fin mi navegacion -->
+
+    <div class="container-sm p-1 my-5 border">
+        <h5>Registrar Usuario</h5>
+        <div class="mb-3 my-3" id="menu-pos">
+            <label for="newIden" class="form.label">Identificacion:</label>
+            <input type="text" class="form-control" id="newIden" name="identification">
+        </div>
+        <div class="mb-3 mt-3" id="menu-pos">
+            <label for="newName" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="newName" name="name">
+        </div>
+        <div class="mb-3 mt-3" id="menu-pos">
+            <label for="newAddress" class="form-label">Direccion:</label>
+            <input type="text" class="form-control" id="newAddress" name="address">
+        </div>
+        <div class="mb-3 mt-3" id="menu-pos">
+            <label for="newCellPhone" class="form-label">Celular:</label>
+            <input type="text" class="form-control" id="newCellPhone" name="cellphone">
+        </div>
+        <div class="mb-3 mt-3" id="menu-pos">
+            <label for="newEmail" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="newEmail" name="email">
+        </div>
+        <div class="mb-3" id="menu-pos">
+            <label for="newPwd" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="newPwd" name="password">
+            <small id="passwordHelpInline" class="text-muted">La Contraseña debe tener minimo 6 caracteres</small>
+        </div>
+        <div class="mb-3 my-3" id="menu-pos">
+            <label for="newConfPass" class="form-label">Confirme Contraseña:</label>
+            <input type="password" class="form-control" id="newConfPass" required />
+        </div>
+        <div class="mb-3" id="menu-pos">
+            <label for="newZone" class="form-label">Zone:</label>
+            <select class="form-control" id="newZone">
+                <option>Seleccione la Zona</option>
+                <option>Comuna 1 Norte</option>
+                <option>Comuna 2 Nororiental</option>
+                <option>Comuna 3 San Francisco</option>
+                <option>Comuna 4 Occidental</option>
+                <option>Comuna 5 Garcia Rovira</option>
+                <option>Comuna 6 La Concordia</option>
+                <option>Comuna 7 La Ciudadela</option>
+                <option>Comuna 8 Sur Occidente</option>
+                <option>Comuna 9 La pedregosa</option>
+                <option>Comuna 10 Provenza</option>
+                <option>Comuna 11 Sur</option>
+                <option>Comuna 12 Cabecera del Llano</option>
+                <option>Comuna 13 Oriental</option>
+                <option>Comuna 14 Morrorico</option>
+                <option>Comuna 15 Centro</option>
+                <option>Comuna 16 Lagos del Cacique</option>
+                <option>Comuna 17 Mutis</option>
+            </select>
+        </div>
+        <div class="mb-3" id="menu-pos">
+            <label for="newType" class="form-label">Tipo Usuario:</label>
+            <select class="form-control" id="newType">
+                <option>Selecciona Tipo Usuario</option>
+                <option>ASE</option>
+                <option>COORD</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="createUser()">Registrar Usuario</button>
+        
+    </div>
+
+    <!-- mi Footer -->
+    <div class="miFooter">
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="./index.html"> deAltoTurmeque.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- fin mi Footer -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

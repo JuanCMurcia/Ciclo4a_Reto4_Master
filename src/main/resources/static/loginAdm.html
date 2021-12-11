@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav/favicon.ico" type="image/x-icon">
+    <title>Turmeque Kids Cloth</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- mi navegacion -->
+    <div class="miNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/LogoTurmeque.png" alt="" style="margin-right: 20px;">
+            <a class="navbar-brand" href="#">Alto Turmeque Ltda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- fin mi navegacion -->
+
+    <br>
+
+    <div class="container-sm p-1 my-5 border">
+        <p class="h4" id="texth4Index">Iniciar Seccion Adminitrador</p>
+        <div class="mb-3" id="menu-pos">
+            <label for="userEmail" class="form-label" id="color-label">Email</label>
+            <input type="email" class="form-control" name="email" id="userEmail" required>
+        </div>
+
+        <div class="mb-3" id="menu-pos">
+            <label for="userPassword" class="form-label" id="color-label">Password</label>
+            <input type="password" class="form-control" name="password" id="userPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary" id="logInButton"
+            onclick="userValidationAdmin('logInForm')">Ingresar</button>
+    </div>
+
+    
+    <a href="./index.html" onclick="message()">
+        <p class="h6 text-center">Volver</p>
+    </a>
+
+    <!-- mi Footer -->
+    <div class="miFooter">
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="./index.html"> deAltoTurmeque.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- fin mi Footer -->
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
