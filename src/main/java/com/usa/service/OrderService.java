@@ -66,7 +66,23 @@ public class OrderService {
         return del;
     }
 
+    //Orden de Pedidos asociadas a Zonas
     public List<Order>findByZone(String zona){
         return orderRepository.findByZone(zona);
+    }
+
+    //Ordenes de Producto x Vendedor
+    public List<Order>ordesSalesByID(Integer id){
+        return orderRepository.ordersSalesByID(id);
+    }
+
+    //Ordenes de Asesores x Estado
+    public List<Order>ordesSalesByState(String state, Integer id){
+        return orderRepository.ordersSalesByState(state, id);
+    }
+
+    //ordenes de Asesores x Fecha
+    public List<Order>ordesSalesByDate(String dateStr, Integer id){
+        return orderRepository.ordersSalesByDate(dateStr, id);
     }
 }
