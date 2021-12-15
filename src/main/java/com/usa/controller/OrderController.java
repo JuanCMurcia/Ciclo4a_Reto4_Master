@@ -62,7 +62,8 @@ public class OrderController {
     }
 
     //Asesores x Date (Fecha)
-    public List<Order>ordersSalesByDate(@PathVariable("date")String dateStr, @PathVariable("id")Integer id){
+    @GetMapping("/date/{registerDay}/{id}")
+    public List<Order>ordersSalesByDate(@PathVariable("registerDay")String dateStr, @PathVariable("id")Integer id){
         return orderService.ordesSalesByDate(dateStr, id);
     }
 }
